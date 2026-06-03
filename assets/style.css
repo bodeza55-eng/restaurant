@@ -1,0 +1,71 @@
+.food-card {
+    position: relative;
+    border: 1px solid #ccc;
+    padding: 15px;
+    margin: 10px;
+    width: 200px;
+}
+
+.food-out {
+    opacity: 0.5;
+}
+
+.food-out::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: -10%;
+    width: 120%;
+    height: 3px;
+    background: red;
+    transform: rotate(-12deg);
+}
+.page-container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding-top: 40px;   /* ⭐ ระยะห่างบนเท่ากัน */
+    padding-bottom: 60px;
+}
+
+.page-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 32px;
+}
+
+.page-header h1 {
+    margin: 0;
+    font-size: 28px;
+    font-weight: 600;
+}
+body{
+    margin:0;
+    font-family:'Kanit',sans-serif;
+    background:
+        radial-gradient(1200px 600px at top left,#1e293b 0%,transparent 60%),
+        radial-gradient(1000px 500px at bottom right,#020617 0%,transparent 65%),
+        #020617;
+    color:#f8fafc;
+}
+
+/* DASHBOARD BACK BUTTON (ใช้ทุกหน้า) */
+.back{
+    display:inline-flex;
+    align-items:center;
+    gap:8px;
+    color:#fff;
+    text-decoration:none;
+    padding:12px 22px;
+    background:rgba(255,255,255,.06);
+    border:1px solid rgba(255,255,255,.15);
+    border-radius:14px;
+    font-weight:600;
+    transition:.25s;
+}
+.back:hover{
+    color:#38bdf8;
+    border-color:#38bdf8;
+    box-shadow:0 0 20px rgba(56,189,248,.45);
+    transform:translateY(-2px);
+}
